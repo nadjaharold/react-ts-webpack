@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5", // TSはECMAScript 5に変換
+    "module": "esNext", // TSのモジュールはES Modulesとして出力
+    "jsx": "react",
+    "moduleResolution": "node",
+    "lib": [
+      "es2020",
+      "dom"
+    ]
+  }
+}
