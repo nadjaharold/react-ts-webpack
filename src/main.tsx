@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {SubComponent} from './sub-component';
+import {SubComponent2} from './sub-component2';
 import * as myImage from "./images/bg.png";
 import * as myImage2 from "./images/cat3.jpg";
 import * as myImage3 from "./images/dog8.jpg";
@@ -18,6 +19,7 @@ class App extends React.Component {
           <img src={imgBase64} />
           <img src={imgBase64_2} />
           <img src={imgBase64_3} />
+          <SubComponent2 name="My Counter for TypeScript" />
         </div>
     );
   }
