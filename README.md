@@ -16,6 +16,18 @@
 - リクエスト数が大きく削減されるため、高速。
 - 100kB 以上の画像は Base64 にすると寧ろ処理コストが増すので Base64 化せずに読み込む。
 
+```tsx
+// base64化した画像の呼び出し方(メモ)
+import * as myImage from "./images/bg.png";
+const imgBase64 = myImage.default;
+class App extends React.Component {
+  render() {
+    return <img src={imgBase64} />;
+  }
+}
+ReactDOM.render(<App />, document.querySelector("#app"));
+```
+
 ### 参考
 
 - [ICS: 最新版 TypeScript+webpack 5 の環境構築まとめ](https://ics.media/entry/16329/)
