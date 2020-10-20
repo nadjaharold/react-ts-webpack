@@ -9,7 +9,7 @@ interface IState {
   count: number;
 }
 
-export class SubComponent extends React.Component<IProps, IState> {
+export class Sub extends React.Component<IProps, IState> {
   constructor(props) {
     super(props);
     this.state = {
